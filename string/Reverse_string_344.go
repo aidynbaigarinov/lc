@@ -1,5 +1,7 @@
 package string
 
+import "fmt"
+
 // ReverseString reverses the array of bytes
 func ReverseString(s []byte) {
 	if len(s) == 0 {
@@ -12,4 +14,6 @@ func ReverseString(s []byte) {
 		low++
 		hi--
 	}
+
+	fmt.Printf("Solution: %s\n", s)
 }
